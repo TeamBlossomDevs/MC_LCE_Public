@@ -331,7 +331,7 @@ void PreStitchedTextureMap::loadUVs()
 	if(iconType != Icon::TYPE_TERRAIN)
 	{
 		float horizRatio = 1.0f/16.0f;
-		float vertRatio = 1.0f/16.0f;
+		float vertRatio = 1.0f/18.0f;
 
 		ADD_ICON(0,		0,	L"helmetCloth")
 		ADD_ICON(0,		1,	L"helmetChain")
@@ -348,7 +348,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(0,		12,	L"egg")
 		ADD_ICON(0,		13,	L"sugar")
 		ADD_ICON(0,		14,	L"snowball")
-		ADD_ICON(0,		15,	L"slot_empty_helmet")
+		ADD_ICON(0,		15,	L"elytra")
 
 		ADD_ICON(1,		0,	L"chestplateCloth")
 		ADD_ICON(1,		1,	L"chestplateChain")
@@ -365,7 +365,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(1,		12,	L"bone")
 		ADD_ICON(1,		13,	L"cake")
 		ADD_ICON(1,		14,	L"slimeball")
-		ADD_ICON(1,		15,	L"slot_empty_chestplate")
+		ADD_ICON(1,		15,	L"elytra_damaged")
 
 		ADD_ICON(2,		0,	L"leggingsCloth")
 		ADD_ICON(2,		1,	L"leggingsChain")
@@ -382,7 +382,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(2,		12,	L"doorIron")
 		ADD_ICON(2,		13,	L"bed")
 		ADD_ICON(2,		14,	L"fireball")
-		ADD_ICON(2,		15,	L"slot_empty_leggings")
+		ADD_ICON(2,		15,	L"chorus_fruit")
 
 		ADD_ICON(3,		0,	L"bootsCloth")
 		ADD_ICON(3,		1,	L"bootsChain")
@@ -399,7 +399,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(3,		12,	L"map")
 		ADD_ICON(3,		13,	L"seeds_pumpkin")
 		ADD_ICON(3,		14,	L"seeds_melon")
-		ADD_ICON(3,		15,	L"slot_empty_boots")
+		ADD_ICON(3,		15,	L"dried_chorus_fruit")
 
 		ADD_ICON(4,		0,	L"swordWood")
 		ADD_ICON(4,		1,	L"swordStone")
@@ -488,7 +488,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(8,		15,	L"dyePowder_light_blue")
 
 		ADD_ICON(9,		0,	L"helmetCloth_overlay")
-		//ADD_ICON(9,		1,	L"unused")
+		ADD_ICON(9,		1,	L"spectral_Arrow")
 		ADD_ICON(9,		2,	L"iron_horse_armor")
 		ADD_ICON(9,		3,	L"diamond_horse_armor")
 		ADD_ICON(9,		4,	L"gold_horse_armor")
@@ -505,16 +505,16 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(9,		15,	L"dyePowder_magenta")
 
 		ADD_ICON(10,	0,	L"chestplateCloth_overlay")
-		//ADD_ICON(10,	1,	L"unused")
-		//ADD_ICON(10,	2,	L"unused")
+		ADD_ICON(10,	1,	L"invis_Arrow")
+		ADD_ICON(10,	2,	L"dragons_breathPotion")
 		ADD_ICON(10,	3,	L"name_tag")
 		ADD_ICON(10,	4,	L"lead")
 		ADD_ICON(10,	5,	L"netherbrick")
-		//ADD_ICON(10,	6,	L"unused")
+		ADD_ICON(10,	6,	L"clownFish")
 		ADD_ICON(10,	7,	L"minecart_furnace")
 		ADD_ICON(10,	8,	L"charcoal")
 		ADD_ICON(10,	9,	L"monsterPlacer_overlay")
-		ADD_ICON(10,	10,	L"ruby")
+		ADD_ICON(10,	10,	L"paper")
 		ADD_ICON(10,	11,	L"expBottle")
 		ADD_ICON(10,	12,	L"brewingStand")
 		ADD_ICON(10,	13,	L"magmaCream")
@@ -522,12 +522,12 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(10,	15,	L"dyePowder_orange")
 
 		ADD_ICON(11,	0,	L"leggingsCloth_overlay")
-		//ADD_ICON(11,	1,	L"unused")
-		//ADD_ICON(11,	2,	L"unused")
-		//ADD_ICON(11,	3,	L"unused")
-		//ADD_ICON(11,	4,	L"unused")
-		//ADD_ICON(11,	5,	L"unused")
-		//ADD_ICON(11,	6,	L"unused")
+		ADD_ICON(11,	1,	L"arrow_tip")
+		ADD_ICON(11,	2,	L"lingering_potion_bottle")
+		ADD_ICON(11,	3,	L"barrier")
+		ADD_ICON(11,	4,	L"raw_mutton")
+		ADD_ICON(11,	5,	L"raw_rabbit")
+		ADD_ICON(11,	6,	L"pufferfish")
 		ADD_ICON(11,	7,	L"minecart_hopper")
 		ADD_ICON(11,	8,	L"hopper")
 		ADD_ICON(11,	9,	L"nether_star")
@@ -539,14 +539,14 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(11,	15,	L"dyePowder_white")
 
 		ADD_ICON(12,	0,	L"bootsCloth_overlay")
-		//ADD_ICON(12,	1,	L"unused")
-		//ADD_ICON(12,	2,	L"unused")
-		//ADD_ICON(12,	3,	L"unused")
-		//ADD_ICON(12,	4,	L"unused")
-		//ADD_ICON(12,	5,	L"unused")
-		//ADD_ICON(12,	6,	L"unused")
+		ADD_ICON(12,	1,	L"beetroot")
+		ADD_ICON(12,	2,	L"beetroot_seeds")
+		ADD_ICON(12,	3,	L"beetroot_soup")
+		ADD_ICON(12,	4,	L"cooked_mutton")
+		ADD_ICON(12,	5,	L"cooked_rabbit")
+		ADD_ICON(12,	6,	L"raw_salmon")
 		ADD_ICON(12,	7,	L"minecart_tnt")
-		//ADD_ICON(12,	8,	L"unused")
+		ADD_ICON(12,	8,	L"armor_stand")
 		ADD_ICON(12,	9,	L"fireworks")
 		ADD_ICON(12,	10,	L"fireworks_charge")
 		ADD_ICON(12,	11,	L"fireworks_charge_overlay")
@@ -555,13 +555,30 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(12,	14,	L"frame")
 		ADD_ICON(12,	15,	L"enchantedBook")
 
-		ADD_ICON(14,	0,	L"skull_skeleton")
-		ADD_ICON(14,	1,	L"skull_wither")
-		ADD_ICON(14,	2,	L"skull_zombie")
-		ADD_ICON(14,	3,	L"skull_char")
-		ADD_ICON(14,	4,	L"skull_creeper")
-		//ADD_ICON(14,	5,	L"unused")
-		//ADD_ICON(14,	6,	L"unused")
+		ADD_ICON(13,		0,	L"doorAcacia")
+		ADD_ICON(13,		1,	L"doorBirch")
+		ADD_ICON(13,		2,	L"doorDarkWood")
+		ADD_ICON(13,		3,	L"doorJungle")
+		ADD_ICON(13,		4,	L"doorSpruce")
+		ADD_ICON(13,		5,	L"mysteryStew")
+		ADD_ICON(13,		6,	L"cooked_salmon")
+		ADD_ICON(13,		7,	L"minecart_command_block")
+		ADD_ICON(13,		8,	L"boatAcacia")
+		ADD_ICON(13,		9,	L"boatBirch")
+		ADD_ICON(13,		10,	L"boatDarkWood")
+		ADD_ICON(13,		11,	L"boatJungle")
+		ADD_ICON(13,		12,	L"boatSpruce")
+		ADD_ICON(13,		13,	L"prismarine_shard")
+		ADD_ICON(13,		14,	L"prismarine_crystals")
+		ADD_ICON(13,		15,	L"horseArmor_leather")
+
+		//ADD_ICON(14,	0,	L"unused")
+		//ADD_ICON(14,	1,	L"unused_prolly_a_flower")
+		ADD_ICON(14,	2,	L"totem_of_undying")
+		ADD_ICON(14,	3,	L"shulker_lid")
+		ADD_ICON(14,	4,	L"iron_nugget")
+		ADD_ICON(14,	5,	L"rabbits_foot")
+		ADD_ICON(14,	6,	L"rabbit_hide")
 		ADD_ICON_WITH_NAME(14,	7,	L"compassP0", L"compass") // 4J Added
 		ADD_ICON_WITH_NAME(14,	8,	L"compassP1", L"compass") // 4J Added
 		ADD_ICON_WITH_NAME(14,	9,	L"compassP2", L"compass") // 4J Added
@@ -584,6 +601,34 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(15,		9,	L"record_ward")
 		ADD_ICON(15,		10,	L"record_11")
 		ADD_ICON(15,		11,	L"record_where are we now")
+		ADD_ICON(15,		12,	L"bucket_of_fish")
+		ADD_ICON(15,		13,	L"bucket_of_salmon")
+		ADD_ICON(15,		14,	L"bucket_of_pufferfish")
+		ADD_ICON(15,		15,	L"bucket_of_tropical_fish")
+
+		ADD_ICON(16,	1,	L"cocoa_beans")
+		ADD_ICON(16,	1,	L"skull_skeleton")
+		ADD_ICON(16,	2,	L"skull_wither")
+		ADD_ICON(16,	3,	L"skull_zombie")
+		ADD_ICON(16,	4,	L"skull_char")
+		ADD_ICON(16,	5,	L"skull_creeper")
+		//ADD_ICON(16,	6,	L"unused")
+		ADD_ICON(16,	7,	L"kelp")
+		ADD_ICON(16,	8,	L"dried_kelp")
+		ADD_ICON(16,	9,	L"sea_pickle")
+		ADD_ICON(16,	10,	L"shell")
+		ADD_ICON(16,	11,	L"heart_of_the_sea")
+		ADD_ICON(16,	12,	L"turtle_helmet")
+		ADD_ICON(16,	13,	L"turtle_guts")
+		ADD_ICON(16,	14,	L"trident")
+		ADD_ICON(16,	15,	L"phantom_mebrane")
+
+		ADD_ICON(17,		0,	L"slot_empty_helmet")
+		ADD_ICON(17,		1,	L"slot_empty_chestplate")
+		ADD_ICON(17,		2,	L"slot_empty_leggings")
+		ADD_ICON(17,		3,	L"slot_empty_boots")
+
+
 
 		// Special cases
 		ClockTexture *dataClock = new ClockTexture();
@@ -649,7 +694,7 @@ void PreStitchedTextureMap::loadUVs()
 	else
 	{
 		float horizRatio = 1.0f/16.0f;
-		float vertRatio = 1.0f/32.0f;
+		float vertRatio = 1.0f/34.0f;
 
 		ADD_ICON(0,		0,	L"grass_top")
 		texturesByName[L"grass_top"]->setFlags(Icon::IS_GRASS_TOP);			// 4J added for faster determination of texture type in tesselation
@@ -801,7 +846,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(8,		9,	L"melon_top");
 		ADD_ICON(8,		10,	L"cauldron_top");
 		ADD_ICON(8,		11,	L"cauldron_inner");
-		//ADD_ICON(8,		12,	L"unused");
+		ADD_ICON(8,		12,	L"unusedBall");
 		ADD_ICON(8,		13,	L"mushroom_block_skin_stem");
 		ADD_ICON(8,		14,	L"mushroom_block_inside");
 		ADD_ICON(8,		15,	L"vine");
@@ -986,5 +1031,61 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(19,	13,	L"glass_pane_top_silver");
 		ADD_ICON(19,	14,	L"glass_pane_top_white");
 		ADD_ICON(19,	15,	L"glass_pane_top_yellow");
+	
+		// mostly unused cuz idfk how to render flower blocks lmao
+		// still keep names in here just until i can understand ts
+		//ADD_ICON(20,	0,	L"fern_top");
+		//ADD_ICON(20,	1,	L"long_grass_top");
+		//ADD_ICON(20,	2,	L"peonie_top");
+		//ADD_ICON(20,	3,	L"rose_bush_top");
+		//ADD_ICON(20,	4,	L"lilac_top");
+		ADD_ICON(20,	5,	L"orange_tulip");
+		//ADD_ICON(20,	6,	L"sunflower_stem_top");
+		//ADD_ICON(20,	7,	L"sunflower_top_flower");
+		ADD_ICON(20,	8,	L"log_acacia");
+		ADD_ICON(20,	9,	L"log_acacia_top");
+		ADD_ICON(20,	10,	L"planks_acacia");
+		ADD_ICON(20,	11,	L"leaves_acacia");
+		ADD_ICON(20,	12,	L"leaves_acacia_opaque");
+		ADD_ICON(20,	13,	L"prismarine_bricks");
+		ADD_ICON(20,	14,	L"red_sand");
+		ADD_ICON(20,	15,	L"red_sandstone_top");
+
+		//ADD_ICON(21,	0,	L"fern_bottom"); // heh, bottom
+		//ADD_ICON(21,	1,	L"long_grass_bottom");
+		//ADD_ICON(21,	2,	L"peonie_bottom");
+		//ADD_ICON(21,	3,	L"rose_bush_bottom");
+		//ADD_ICON(21,	4,	L"lilac_bottom");
+		ADD_ICON(21,	5,	L"purple_tulip");
+		//ADD_ICON(21,	6,	L"sunflower_stem_bottom");
+		//ADD_ICON(21,	7,	L"sunflower_leaf");
+		ADD_ICON(21,	8,	L"log_spruce");
+		ADD_ICON(21,	9,	L"log_spruce_top");
+		ADD_ICON(21,	10,	L"planks_spruce");
+		ADD_ICON(21,	11,	L"leaves_spruce");
+		ADD_ICON(21,	12,	L"leaves_spruce_opaque");
+		ADD_ICON(21,	13,	L"dark_prismarine");
+		// seriously what the fuck is it
+		//ADD_ICON(21,	14,	L"somerandomred_sandstone_thing");
+		ADD_ICON(21,	15,	L"red_sandstone");
+
+		
+		ADD_ICON(21,	0,	L"allium");
+		ADD_ICON(21,	1,	L"blue_orchid");
+		ADD_ICON(21,	2,	L"azure_bluet");
+		ADD_ICON(21,	3,	L"daisy");
+		ADD_ICON(21,	4,	L"red_tulip");
+		ADD_ICON(21,	5,	L"white_tulip");
+		ADD_ICON(21,	6,	L"acacia_sapling");
+		ADD_ICON(21,	7,	L"spruce_sapling");
+		ADD_ICON(21,	8,	L"course_dirt");
+		ADD_ICON(21,	9,	L"log_spruce_top");
+		ADD_ICON(21,	10,	L"planks_spruce");
+		ADD_ICON(21,	11,	L"leaves_spruce");
+		ADD_ICON(21,	12,	L"leaves_spruce_opaque");
+		ADD_ICON(21,	13,	L"dark_prismarine");
+		// seriously what the fuck is it
+		ADD_ICON(21,	14,	L"somerandomred_sandstone_thing");
+		ADD_ICON(21,	15,	L"red_sandstone");
 	}
 }
