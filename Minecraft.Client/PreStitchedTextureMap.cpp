@@ -572,8 +572,8 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(13,		14,	L"prismarine_crystals")
 		ADD_ICON(13,		15,	L"horseArmor_leather")
 
-		//ADD_ICON(14,	0,	L"unused")
-		//ADD_ICON(14,	1,	L"unused_prolly_a_flower")
+		ADD_ICON(14,	0,	L"structure_void")
+		//ADD_ICON(14,	1,	L"filled_map_markings")
 		ADD_ICON(14,	2,	L"totem_of_undying")
 		ADD_ICON(14,	3,	L"shulker_lid")
 		ADD_ICON(14,	4,	L"iron_nugget")
@@ -967,12 +967,12 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(16,	0,	L"coal_block");
 		ADD_ICON(16,	1,	L"hardened_clay");
 		ADD_ICON(16,	2,	L"noteblock");
-		//ADD_ICON(16,	3,	L"unused");
-		//ADD_ICON(16,	4,	L"unused");
-		//ADD_ICON(16,	5,	L"unused");
-		//ADD_ICON(16,	6,	L"unused");
-		//ADD_ICON(16,	7,	L"unused");
-		//ADD_ICON(16,	8,	L"unused");
+		ADD_ICON(16,	3,	L"andesite");
+		ADD_ICON(16,	4,	L"polished_andesite");
+		ADD_ICON(16,	5,	L"diorite");
+		ADD_ICON(16,	6,	L"polished_diorite");
+		ADD_ICON(16,	7,	L"granite");
+		ADD_ICON(16,	8,	L"polished_granite");
 		ADD_ICON(16,	9,	L"potatoes_stage_0");
 		ADD_ICON(16,	10,	L"potatoes_stage_1");
 		ADD_ICON(16,	11,	L"potatoes_stage_2");
@@ -1070,22 +1070,97 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(21,	15,	L"red_sandstone");
 
 		
-		ADD_ICON(21,	0,	L"allium");
-		ADD_ICON(21,	1,	L"blue_orchid");
-		ADD_ICON(21,	2,	L"azure_bluet");
-		ADD_ICON(21,	3,	L"daisy");
-		ADD_ICON(21,	4,	L"red_tulip");
-		ADD_ICON(21,	5,	L"white_tulip");
-		ADD_ICON(21,	6,	L"acacia_sapling");
-		ADD_ICON(21,	7,	L"spruce_sapling");
-		ADD_ICON(21,	8,	L"course_dirt");
-		ADD_ICON(21,	9,	L"log_spruce_top");
-		ADD_ICON(21,	10,	L"planks_spruce");
-		ADD_ICON(21,	11,	L"leaves_spruce");
-		ADD_ICON(21,	12,	L"leaves_spruce_opaque");
-		ADD_ICON(21,	13,	L"dark_prismarine");
-		// seriously what the fuck is it
-		ADD_ICON(21,	14,	L"somerandomred_sandstone_thing");
-		ADD_ICON(21,	15,	L"red_sandstone");
+		ADD_ICON(22,	0,	L"allium");
+		ADD_ICON(22,	1,	L"blue_orchid");
+		ADD_ICON(22,	2,	L"azure_bluet");
+		ADD_ICON(22,	3,	L"daisy");
+		ADD_ICON(22,	4,	L"red_tulip");
+		ADD_ICON(22,	5,	L"white_tulip");
+		ADD_ICON(22,	6,	L"acacia_sapling");
+		ADD_ICON(22,	7,	L"spruce_sapling");
+		ADD_ICON(22,	8,	L"course_dirt");
+		ADD_ICON(22,	9,	L"podzol");
+		ADD_ICON(22,	10,	L"podzol_top");
+		//ADD_ICON(22,	11,	L"leaves_spruce");
+		//ADD_ICON(22,	12,	L"leaves_spruce_opaque");
+		ADD_ICON(22,	13,	L"prismarine");
+		ADD_ICON(22,	14,	L"chiseled_red_sandstone");
+		ADD_ICON(22,	15,	L"cut_red_sandstone");
+
+		ADD_ICON(23,	0,	L"door_acacia_upper");
+		ADD_ICON(23,	1,	L"door_birch_upper");
+		ADD_ICON(23,	2,	L"door_darkoak_upper");
+		ADD_ICON(23,	3,	L"door_jungle_upper");
+		ADD_ICON(23,	4,	L"door_spruce_upper");
+		ADD_ICON(23,	5,	L"chorus_flower");
+		ADD_ICON(23,	6,	L"chorus_flower_dead");
+		ADD_ICON(23,	7,	L"chorus_plant");
+		ADD_ICON(23,	8,	L"end_stone");
+		ADD_ICON(23,	9,	L"dirt_path");
+		ADD_ICON(23,	10,	L"dirt_path_top");
+		ADD_ICON(23,	11,	L"barrier");
+		ADD_ICON(23,	12,	L"ice");
+		ADD_ICON(23,	13,	L"sea_lanturn");
+		//redstone shiz, seems as if it uses a shader or something to change the light texture?
+		//ADD_ICON(23,	14,	L"daylight_detector");
+		ADD_ICON(23,	15,	L"iron_trap_door");
+
+		ADD_ICON(24,	0,	L"door_acacia_lower");
+		ADD_ICON(24,	1,	L"door_birch_lower");
+		ADD_ICON(24,	2,	L"door_darkoak_lower");
+		ADD_ICON(24,	3,	L"door_jungle_lower");
+		ADD_ICON(24,	4,	L"door_spruce_lower");
+		ADD_ICON(24,	5,	L"end_bricks");
+		ADD_ICON(24,	6,	L"end_pillar");
+		ADD_ICON(24,	7,	L"end_pillar_top");
+		// some particle??? maybe end rods???
+		// its an end rod TwT
+		//ADD_ICON(24,	8,	L"end_rod");
+		ADD_ICON(24,	9,	L"magma_block");
+		// dont add blocks or items until we forsure know the purpose, lmfao who do we think we are ubisoft????
+		//ADD_ICON(24,	10,	L"netherwart_block");
+		//ADD_ICON(24,	11,	L"red_nether_bricks");
+		//ADD_ICON(24,	12,	L"blue_ice");
+		//ADD_ICON(24,	13,	L"blue_ice_break1");
+		//redstone shiz
+		//ADD_ICON(24,	14,	L"blue_ice_break2");
+		//ADD_ICON(24,	15,	L"blue_ice_break2");
+
+		ADD_ICON(25,	0,	L"beetroot_stage_0");
+		ADD_ICON(25,	1,	L"beetroot_stage_1");
+		ADD_ICON(25,	2,	L"beetroot_stage_2");
+		ADD_ICON(25,	3,	L"beetroot_stage_3");
+		// command blocks, im too fucking lazy to do this bs
+		//ADD_ICON(25,	4,	L"command_blue_side_1");
+		//ADD_ICON(25,	5,	L"command_blue_side_2");
+		//ADD_ICON(25,	6,	L"command_blue_side_3");
+		//ADD_ICON(25,	7,	L"command_blue_side_4");
+		//ADD_ICON(25,	8,	L"command_orange_side_1");
+		//ADD_ICON(25,	9,	L"command_orange_side_2");
+		//ADD_ICON(25,	10,	L"command_orange_side_3");
+		//ADD_ICON(25,	11,	L"command_orange_side_4");
+		//ADD_ICON(25,	12,	L"command_purple_side_1");
+		//ADD_ICON(25,	13,	L"command_purple_side_2");
+		//ADD_ICON(25,	14,	L"command_purple_side_3");
+		//ADD_ICON(25,	15,	L"command_purple_side_4");
+
+		ADD_ICON(26,	0,	L"bone_block_side");
+		ADD_ICON(26,	1,	L"bone_block_top");
+		// i dont know which one it is
+		//ADD_ICON(26,	2,	L"stem_0");
+		//ADD_ICON(26,	3,	L"stem_1");
+		ADD_ICON(26,	4,	L"observer_side_front");
+		ADD_ICON(26,	5,	L"observer_side");
+		ADD_ICON(26,	6,	L"observer_side_back");
+		//ADD_ICON(26,	7,	L"observer_side_back_erect"); lemme have fun okay?
+		ADD_ICON(26,	8,	L"observer_side_top");
+		// what are these gummy blocks?????
+		//ADD_ICON(26,	9,	L"yellow_gummy");
+		//ADD_ICON(26,	10,	L"green_gummy");
+		ADD_ICON(26,	11,	L"structure_block_1");
+		ADD_ICON(26,	12,	L"structure_block_2");
+		ADD_ICON(26,	13,	L"structure_block_3");
+		ADD_ICON(26,	14,	L"structure_block_4");
+		ADD_ICON(26,	15,	L"structure_block_5");
 	}
 }
