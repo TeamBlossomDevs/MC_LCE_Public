@@ -331,7 +331,7 @@ void PreStitchedTextureMap::loadUVs()
 	if(iconType != Icon::TYPE_TERRAIN)
 	{
 		float horizRatio = 1.0f/16.0f;
-		float vertRatio = 1.0f/18.0f;
+		float vertRatio = 1.0f/19.0f;
 
 		ADD_ICON(0,		0,	L"helmetCloth")
 		ADD_ICON(0,		1,	L"helmetChain")
@@ -623,10 +623,42 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(16,	14,	L"trident")
 		ADD_ICON(16,	15,	L"phantom_mebrane")
 
+		
 		ADD_ICON(17,		0,	L"slot_empty_helmet")
 		ADD_ICON(17,		1,	L"slot_empty_chestplate")
 		ADD_ICON(17,		2,	L"slot_empty_leggings")
 		ADD_ICON(17,		3,	L"slot_empty_boots")
+		// new version stuff wow!
+		//ADD_ICON(17,		4,	L"cherry_door")
+		ADD_ICON(17,		5,	L"hatchetCopper")
+		//ADD_ICON(17,		6,	L"copper_door")
+		ADD_ICON(17,		7,	L"hoeCopper")
+		ADD_ICON(17,		8,	L"pickaxeCopper")
+		ADD_ICON(17,		9,	L"ingotCopper")
+		ADD_ICON(17,		10,	L"swordCopper")
+		ADD_ICON(17,		11,	L"shovelCopper")
+		ADD_ICON(17,		12,	L"helmetCopper")
+		ADD_ICON(17,		13,	L"chestplateCopper")
+		ADD_ICON(17,		14,	L"leggingsCopper")
+		ADD_ICON(17,		15,	L"bootsCopper")
+
+		ADD_ICON(18,		0,	L"hatchetNetherite")
+		ADD_ICON(18,		1,	L"hoeNetherite")
+		ADD_ICON(18,		2,	L"pickaxeNetherite")
+		ADD_ICON(18,		3,	L"swordNetherite")
+		ADD_ICON(18,		4,	L"shovelNetherite")
+		ADD_ICON(18,		5,	L"netherite_scrap")
+		ADD_ICON(18,		6,	L"helmetNetherite")
+		ADD_ICON(18,		7,	L"chestplateNetherite")
+		ADD_ICON(18,		8,	L"leggingsNetherite")
+		ADD_ICON(18,		9,	L"bootsNetherite")
+		ADD_ICON(18,		10,	L"ingotNetherite")
+		// unused from here on out
+		//ADD_ICON(18,		11,	L"unused")
+		//ADD_ICON(18,		12,	L"unused")
+		//ADD_ICON(18,		13,	L"unused")
+		//ADD_ICON(18,		14,	L"unused")
+		//ADD_ICON(18,		15,	L"unused")
 
 
 
@@ -694,7 +726,7 @@ void PreStitchedTextureMap::loadUVs()
 	else
 	{
 		float horizRatio = 1.0f/16.0f;
-		float vertRatio = 1.0f/34.0f;
+		float vertRatio = 1.0f/37.0f;
 
 		ADD_ICON(0,		0,	L"grass_top")
 		texturesByName[L"grass_top"]->setFlags(Icon::IS_GRASS_TOP);			// 4J added for faster determination of texture type in tesselation
@@ -1162,5 +1194,41 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(26,	13,	L"structure_block_3");
 		ADD_ICON(26,	14,	L"structure_block_4");
 		ADD_ICON(26,	15,	L"structure_block_5");
+
+		ADD_ICON(27,	0,	L"black_concrete");
+		ADD_ICON(27,	1,	L"blue_concrete");
+		ADD_ICON(27,	2,	L"brown_concrete");
+		ADD_ICON(27,	3,	L"cyan_concrete");
+		ADD_ICON(27,	4,	L"grey_concrete");
+		ADD_ICON(27,	5,	L"green_concrete");
+		ADD_ICON(27,	6,	L"light_blue_concrete");
+		ADD_ICON(27,	7,	L"light_green_concrete");
+		ADD_ICON(27,	8,	L"magenta_concrete");
+		ADD_ICON(27,	9,	L"orange_concrete");
+		ADD_ICON(27,	10,	L"pink_concrete");
+		ADD_ICON(27,	11,	L"purple_concrete");
+		ADD_ICON(27,	12,	L"red_concrete");
+		ADD_ICON(27,	13,	L"light_grey_concrete");
+		ADD_ICON(27,	14,	L"white_concrete");
+		ADD_ICON(27,	15,	L"yellow_concrete");
+
+		ADD_ICON(28,	0,	L"black_concrete_powder");
+		ADD_ICON(28,	1,	L"blue_concrete_powder");
+		ADD_ICON(28,	2,	L"brown_concrete_powder");
+		ADD_ICON(28,	3,	L"cyan_concrete_powder");
+		ADD_ICON(28,	4,	L"grey_concrete_powder");
+		ADD_ICON(28,	5,	L"green_concrete_powder");
+		ADD_ICON(28,	6,	L"light_blue_concrete_powder");
+		ADD_ICON(28,	7,	L"light_green_concrete_powder");
+		ADD_ICON(28,	8,	L"magenta_concrete_powder");
+		ADD_ICON(28,	9,	L"orange_concrete_powder");
+		ADD_ICON(28,	10,	L"pink_concrete_powder");
+		ADD_ICON(28,	11,	L"purple_concrete_powder");
+		ADD_ICON(28,	12,	L"red_concrete_powder");
+		ADD_ICON(28,	13,	L"light_grey_concrete_powder");
+		ADD_ICON(28,	14,	L"white_concrete_powder");
+		ADD_ICON(28,	15,	L"yellow_concrete_powder");
+
+		// everything else isnt as important to me. move on.
 	}
 }

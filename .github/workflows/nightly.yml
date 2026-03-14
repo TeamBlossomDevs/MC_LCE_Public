@@ -9,7 +9,8 @@ on:
       - '.gitignore'
       - '*.md'
       - '.github/*.md'
-
+permissions:
+  write-all
 jobs:
   build:
     name: Build Windows64
