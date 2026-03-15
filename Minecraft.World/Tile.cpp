@@ -226,7 +226,7 @@ Tile *Tile::cherryPlanks = nullptr;
 Tile *Tile::ancientDebris = nullptr;
 Tile *Tile::netheriteBlock = nullptr;
 Tile *Tile::copperBlock = nullptr;
-Tile *Tile::copperOre = nullptr;ancientDebris_Id
+Tile *Tile::copperOre = nullptr;
 Tile *Tile::cherryLeaves = nullptr;
 
 DWORD Tile::tlsIdxShape = TlsAlloc();
