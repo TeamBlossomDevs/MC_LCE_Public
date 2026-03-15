@@ -650,7 +650,7 @@ public:
 
 	static const int helmet_copper_Id = 422;
 	static const int chestplate_copper_Id = 423;
-	static const int leggings_copper_Id = 424
+	static const int leggings_copper_Id = 424;
 	static const int boots_copper_Id = 425;
 
 	static const int sword_copper_Id = 426;
