@@ -39,6 +39,8 @@ Material *Material::portal = nullptr;
 Material *Material::cake = nullptr;
 Material *Material::piston = nullptr;
 Material *Material::web = nullptr;
+Material *Material::netherite = nullptr;
+Material *Material::copper = nullptr;
 
 void Material::staticCtor()
 {

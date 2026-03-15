@@ -3050,6 +3050,9 @@
     <ClInclude Include="HopperTileEntity.h">
       <Filter>net\minecraft\world\level\tile\entity</Filter>
     </ClInclude>
+    <ClInclude Include="AncientDebrisTile.h">
+      <Filter>net\minecraft\world\level\tile</Filter>
+    </ClInclude>
     <ClInclude Include="BaseEntityTile.h">
       <Filter>net\minecraft\world\level\tile</Filter>
     </ClInclude>
@@ -5484,6 +5487,9 @@
     </ClCompile>
     <ClCompile Include="HopperTileEntity.cpp">
       <Filter>net\minecraft\world\level\tile\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="AncientDebrisTile.cpp">
+      <Filter>net\minecraft\world\level\tile</Filter>
     </ClCompile>
     <ClCompile Include="BaseEntityTile.cpp">
       <Filter>net\minecraft\world\level\tile</Filter>

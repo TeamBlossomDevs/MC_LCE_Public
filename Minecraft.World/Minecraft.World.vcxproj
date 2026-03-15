@@ -2418,6 +2418,7 @@
     <ClInclude Include="Attribute.h" />
     <ClInclude Include="AttributeInstance.h" />
     <ClInclude Include="AttributeModifier.h" />
+    <ClInclude Include="AncientDebrisTile.h" />
     <ClInclude Include="AuxDataTileItem.h" />
     <ClInclude Include="AvoidPlayerGoal.h" />
     <ClInclude Include="AwardStatPacket.h" />
@@ -3475,6 +3476,7 @@
     <ClCompile Include="AirTile.cpp" />
     <ClCompile Include="AmbientCreature.cpp" />
     <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="AncientDebrisTile.cpp" />
     <ClCompile Include="AnimalChest.cpp" />
     <ClCompile Include="AnimatePacket.cpp" />
     <ClCompile Include="AnvilTile.cpp" />
