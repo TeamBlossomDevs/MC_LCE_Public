@@ -41,8 +41,8 @@ FurnaceRecipes::FurnaceRecipes()
 	addFurnaceRecipy(Tile::netherQuartz_Id, new ItemInstance(Item::netherQuartz), .2f);
 
 	// backport shiz
-	addFurnaceRecipy(Tile::ancientDebris, new ItemInstance(Item::netheriteScrap), 1.25f);
-	addFurnaceRecipy(Tile::copperOre, new ItemInstance(Item::copperIngot), 0.6f);
+	addFurnaceRecipy(Tile::ancientDebris_Id, new ItemInstance(Item::netheriteScrap), 1.25f);
+	addFurnaceRecipy(Tile::copperOre_Id, new ItemInstance(Item::copperIngot), 0.6f);
 
 }
 
