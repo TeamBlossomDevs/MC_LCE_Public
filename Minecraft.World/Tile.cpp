@@ -452,7 +452,7 @@ void Tile::staticCtor()
 	Tile::coalBlock = (new Tile(173, Material::stone))				->setBaseItemTypeAndMaterial(Item::eBaseItemType_block,	Item::eMaterial_coal)->setDestroyTime(5.0f)->setExplodeable(10)->setSoundType(SOUND_STONE)->setIconName(L"coal_block")->setDescriptionId(IDS_TILE_COAL)->setUseDescriptionId(IDS_DESC_COAL_BLOCK);
 
 	// backported stuff
-	Tile::ancientDebris = 	(new AncientDebrisTile(176))							->setBaseItemTypeAndMaterial(Item::eBaseItemType_block, Item::eMaterial_stone) ->setDestroyTime(30.0f) ->setExplodeable(30) ->setSoundType(SOUND_STONE) ->setIconName(L"ancient_debris") ->setDescriptionId(IDS_TILE_COAL) ->setUseDescriptionId(IDS_DESC_COAL_BLOCK);
+	Tile::ancientDebris = 	(new AncientDebrisTile(176))							->setBaseItemTypeAndMaterial(Item::eBaseItemType_block, Item::eMaterial_netherite) ->setDestroyTime(30.0f) ->setExplodeable(30) ->setSoundType(SOUND_STONE) ->setIconName(L"ancient_debris") ->setDescriptionId(IDS_TILE_COAL) ->setUseDescriptionId(IDS_DESC_COAL_BLOCK);
 	Tile::netheriteBlock =	(new MetalTile(177))									->setBaseItemTypeAndMaterial(Item::eBaseItemType_block,	Item::eMaterial_netherite)->setDestroyTime(30.0f)->setExplodeable(30)->setSoundType(SOUND_METAL)->setIconName(L"netherite_block")->setDescriptionId(IDS_TILE_BLOCK_DIAMOND)->setUseDescriptionId(IDS_DESC_BLOCK_DIAMOND);
 	Tile::copperOre = (new OreTile(179))									->setDestroyTime(3.0f)->setExplodeable(5)->setSoundType(Tile::SOUND_STONE)->setIconName(L"copper_ore")->setDescriptionId(IDS_TILE_ORE_IRON)->setUseDescriptionId(IDS_DESC_ORE_IRON);
 

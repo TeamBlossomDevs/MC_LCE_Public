@@ -2,8 +2,7 @@
 #include "AncientDebrisTile.h"
 #include "Facing.h"
 
-AncientDebrisTile::AncientDebrisTile(int id)
-    : Tile(id, Material::ancientDebris)
+AncientDebrisTile::AncientDebrisTile(int id) : Tile(id, Material::netherite)
 {
 }
 
