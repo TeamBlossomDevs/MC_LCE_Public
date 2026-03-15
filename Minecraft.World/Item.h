@@ -290,10 +290,10 @@ public:
 	static ArmorItem *leggings_copper;
 	static ArmorItem *boots_copper;
 
-	static ArmorItem *helmet_copper;
-	static ArmorItem *chestplate_copper;
-	static ArmorItem *leggings_copper;
-	static ArmorItem *boots_copper;
+	static ArmorItem *helmet_netherite;
+	static ArmorItem *chestplate_netherite;
+	static ArmorItem *leggings_netherite;
+	static ArmorItem *boots_netherite;
 
 	static Item *flint;
 	static Item *porkChop_raw;

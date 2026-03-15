@@ -35,6 +35,8 @@ public:
 		static const int ironArray[];
 		static const int goldArray[];
 		static const int diamondArray[];
+		static const int copperArray[];
+		static const int netheriteArray[];
 	public:
 		static const ArmorMaterial *CLOTH;
 		static const ArmorMaterial *CHAIN;
