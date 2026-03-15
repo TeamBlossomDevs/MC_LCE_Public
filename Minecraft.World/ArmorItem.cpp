@@ -82,7 +82,7 @@ _ArmorMaterial::ArmorMaterial(int durabilityMultiplier, const int slotProtection
 
 _ArmorMaterial::~ArmorMaterial()
 {
-	delete [] slotProtections;
+	//delete [] slotProtections;
 }
 
 int _ArmorMaterial::getHealthForSlot(int slot) const
