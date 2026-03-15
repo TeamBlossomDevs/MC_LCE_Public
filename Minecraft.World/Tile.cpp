@@ -15,6 +15,7 @@
 #include "net.minecraft.world.food.h"
 #include "net.minecraft.world.h"
 #include "net.minecraft.h"
+#include "AncientDebrisTile.h"
 #include "Tile.h"
 
 wstring Tile::TILE_DESCRIPTION_PREFIX = L"Tile.";
@@ -223,7 +224,7 @@ Tile *Tile::coalBlock = nullptr;
 // backported stuff
 Tile *Tile::cherryLog = nullptr;
 Tile *Tile::cherryPlanks = nullptr;
-Tile *Tile::ancientDebris = nullptr;
+AncientDebrisTile *Tile::ancientDebris = nullptr;
 Tile *Tile::netheriteBlock = nullptr;
 Tile *Tile::copperBlock = nullptr;
 Tile *Tile::copperOre = nullptr;
