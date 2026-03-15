@@ -5,6 +5,8 @@
 
 AncientDebrisTile::AncientDebrisTile(int id) : Tile(id, Material::stone)
 {
+    iconTop = nullptr;
+    iconSide = nullptr;
 }
 
 void AncientDebrisTile::registerIcons(IconRegister *iconRegister)
@@ -15,9 +17,8 @@ void AncientDebrisTile::registerIcons(IconRegister *iconRegister)
 
 Icon *AncientDebrisTile::getTexture(int face, int data)
 {
-    if (face == Facing::UP)
+    if (face == Facing::UP || face == Facing::DOWN)
         return iconTop;
-    if (face == Facing::DOWN) 
-        return iconTop;
+
     return iconSide;
 }
