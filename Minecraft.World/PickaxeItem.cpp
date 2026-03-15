@@ -29,8 +29,8 @@ void PickaxeItem::staticCtor()
 	diggables.data[19] = Tile::rail;
 	diggables.data[20] = Tile::detectorRail;
 	diggables.data[21] = Tile::goldenRail;
-	diggables.data[21] = Tile::activatorRail;
-	diggables.data[22] = Tile::netheriteBlock;
+	diggables.data[22] = Tile::activatorRail;
+	diggables.data[23] = Tile::netheriteBlock;
 }
 
 PickaxeItem::PickaxeItem(int id, const Tier *tier) : DiggerItem(id, 2, tier, &diggables)

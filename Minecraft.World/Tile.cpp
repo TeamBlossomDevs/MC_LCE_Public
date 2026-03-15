@@ -224,7 +224,7 @@ Tile *Tile::coalBlock = nullptr;
 // backported stuff
 Tile *Tile::cherryLog = nullptr;
 Tile *Tile::cherryPlanks = nullptr;
-AncientDebrisTile *Tile::ancientDebris = nullptr;
+Tile *Tile::ancientDebris = nullptr;
 Tile *Tile::netheriteBlock = nullptr;
 Tile *Tile::copperBlock = nullptr;
 Tile *Tile::copperOre = nullptr;

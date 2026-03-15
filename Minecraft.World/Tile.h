@@ -562,7 +562,7 @@ public:
 	// backported stuff
 	static Tile *cherryLog;
 	static Tile *cherryPlanks;
-	static AncientDebrisTile *ancientDebris;
+	static Tile *ancientDebris;
 	static Tile *netheriteBlock;
 	static Tile *copperBlock;
 	static Tile *copperOre;
