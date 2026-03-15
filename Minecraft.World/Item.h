@@ -671,6 +671,8 @@ public:
 	static const int copperIngot_Id = 438;
 	static const int netheriteIngot_Id = 439;
 	static const int netheriteScrap_Id = 440;
+	static const int hoe_copper_Id	   = 441;
+	static const int hoe_netherite_Id	   = 442;
 
 
 public:
