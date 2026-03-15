@@ -14,8 +14,8 @@ int OreTile::getResource(int data, Random *random, int playerBonusLevel)
     if (id == Tile::lapisOre_Id) return Item::dye_powder_Id;
 	if (id == Tile::emeraldOre_Id) return Item::emerald_Id;
 	if (id == Tile::netherQuartz_Id) return Item::netherQuartz_Id;
-	if (id == Tile::ancientDebris_Id) return Item::ancientDebris_Id;
-	if (id == Tile::copperOre_Id) return Item::copperOre_Id;
+	if (id == Tile::ancientDebris_Id) return Item::netheriteScrap_Id;
+	if (id == Tile::copperOre_Id) return Item::copperIngot_Id;
     return id;
 }
 
