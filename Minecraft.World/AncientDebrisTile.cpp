@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "AncientDebrisTile.h"
 #include "Facing.h"
+#include "IconRegister.h"
 
 AncientDebrisTile::AncientDebrisTile(int id) : Tile(id, Material::netherite)
 {
