@@ -3,7 +3,7 @@
 #include "Facing.h"
 #include "IconRegister.h"
 
-AncientDebrisTile::AncientDebrisTile(int id) : Tile(id, Material::netherite)
+AncientDebrisTile::AncientDebrisTile(int id) : Tile(id, Material::stone)
 {
 }
 
