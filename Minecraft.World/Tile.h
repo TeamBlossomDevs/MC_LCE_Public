@@ -32,7 +32,6 @@ class Random;
 class HitResult;
 class Level;
 class HopperTile;
-class AncientDebrisTile;
 class Player;
 class LevelSource;
 class Mob;
@@ -560,13 +559,13 @@ public:
 	static Tile *coalBlock;
 
 	// backported stuff
-	//static Tile *cherryLog;
-	//static Tile *cherryPlanks;
+	static Tile *cherryLog;
+	static Tile *cherryPlanks;
 	static Tile *ancientDebris;
 	static Tile *netheriteBlock;
 	static Tile *copperBlock;
 	static Tile *copperOre;
-	//static Tile *cherryLeaves;
+	static Tile *cherryLeaves;
 
 	static void staticCtor();
 

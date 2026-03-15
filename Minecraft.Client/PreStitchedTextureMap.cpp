@@ -1251,7 +1251,7 @@ void PreStitchedTextureMap::loadUVs()
 
 		// no textures, mostly unused
 
-		//ADD_ICON(35,	0,	L"unused");
+		ADD_ICON(35,	0,	L"debris_ore");
 		//ADD_ICON(35,	1,	L"unused");
 		//ADD_ICON(35,	2,	L"unused");
 		//ADD_ICON(35,	3,	L"unused");
@@ -1267,5 +1267,6 @@ void PreStitchedTextureMap::loadUVs()
 		//ADD_ICON(35,	13,	L"unused");
 		//ADD_ICON(35,	14,	L"unused");
 		//ADD_ICON(35,	15,	L"copper_door_lower");
+
 	}
 }
