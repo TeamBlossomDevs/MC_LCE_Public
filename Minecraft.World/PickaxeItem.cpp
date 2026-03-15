@@ -30,6 +30,7 @@ void PickaxeItem::staticCtor()
 	diggables.data[20] = Tile::detectorRail;
 	diggables.data[21] = Tile::goldenRail;
 	diggables.data[21] = Tile::activatorRail;
+	diggables.data[22] = Tile::netheriteBlock;
 }
 
 PickaxeItem::PickaxeItem(int id, const Tier *tier) : DiggerItem(id, 2, tier, &diggables)
@@ -40,6 +41,7 @@ bool PickaxeItem::canDestroySpecial(Tile *tile)
 {
 	if (tile == Tile::obsidian) return tier->getLevel() == 3;
 	if (tile == Tile::diamondBlock || tile == Tile::diamondOre) return tier->getLevel() >= 2;
+	if (tile == Tile::netheriteBlock || tile == Tile::ancientDebris) return tier->getLevel() >= 2;
 	if (tile == Tile::emeraldBlock || tile == Tile::emeraldOre) return tier->getLevel() >= 2;
 	if (tile == Tile::goldBlock || tile == Tile::goldOre) return tier->getLevel() >= 2;
 	if (tile == Tile::ironBlock || tile == Tile::ironOre) return tier->getLevel() >= 1;

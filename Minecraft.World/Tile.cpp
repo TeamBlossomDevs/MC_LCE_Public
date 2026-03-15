@@ -220,6 +220,15 @@ Tile *Tile::woolCarpet = nullptr;
 Tile *Tile::clayHardened = nullptr;
 Tile *Tile::coalBlock = nullptr;
 
+// backported stuff
+Tile *Tile::cherryLog = nullptr;
+Tile *Tile::cherryPlanks = nullptr;
+Tile *Tile::ancientDebris = nullptr;
+Tile *Tile::netheriteBlock = nullptr;
+Tile *Tile::copperBlock = nullptr;
+Tile *Tile::copperOre = nullptr;
+Tile *Tile::cherryLeaves = nullptr;
+
 DWORD Tile::tlsIdxShape = TlsAlloc();
 
 Tile::ThreadStorage::ThreadStorage()
@@ -442,6 +451,10 @@ void Tile::staticCtor()
 	Tile::clayHardened = (new Tile(172, Material::stone))			->setBaseItemTypeAndMaterial(Item::eBaseItemType_clay,	Item::eMaterial_clay)->setDestroyTime(1.25f)->setExplodeable(7)->setSoundType(SOUND_STONE)->setIconName(L"hardened_clay")->setDescriptionId(IDS_TILE_HARDENED_CLAY)->setUseDescriptionId(IDS_DESC_HARDENED_CLAY);
 	Tile::coalBlock = (new Tile(173, Material::stone))				->setBaseItemTypeAndMaterial(Item::eBaseItemType_block,	Item::eMaterial_coal)->setDestroyTime(5.0f)->setExplodeable(10)->setSoundType(SOUND_STONE)->setIconName(L"coal_block")->setDescriptionId(IDS_TILE_COAL)->setUseDescriptionId(IDS_DESC_COAL_BLOCK);
 
+	// backported stuff
+	Tile::ancientDebris = 	(new AncientDebrisTile(176))							->setBaseItemTypeAndMaterial(Item::eBaseItemType_block, Item::eMaterial_stone) ->setDestroyTime(30.0f) ->setExplodeable(30) ->setSoundType(SOUND_STONE) ->setIconName(L"ancient_debris") ->setDescriptionId(IDS_TILE_COAL) ->setUseDescriptionId(IDS_DESC_COAL_BLOCK);
+	Tile::netheriteBlock =	(new MetalTile(177))									->setBaseItemTypeAndMaterial(Item::eBaseItemType_block,	Item::eMaterial_netherite)->setDestroyTime(30.0f)->setExplodeable(30)->setSoundType(SOUND_METAL)->setIconName(L"netherite_block")->setDescriptionId(IDS_TILE_BLOCK_DIAMOND)->setUseDescriptionId(IDS_DESC_BLOCK_DIAMOND);
+	Tile::copperOre = (new OreTile(179))									->setDestroyTime(3.0f)->setExplodeable(5)->setSoundType(Tile::SOUND_STONE)->setIconName(L"copper_ore")->setDescriptionId(IDS_TILE_ORE_IRON)->setUseDescriptionId(IDS_DESC_ORE_IRON);
 
 	// Special cases for certain items since they can have different icons
 	Item::items[wool_Id]				= ( new WoolTileItem(Tile::wool_Id- 256) )->setIconName(L"cloth")->setDescriptionId(IDS_TILE_CLOTH)->setUseDescriptionId(IDS_DESC_WOOL);
@@ -449,8 +462,8 @@ void Tile::staticCtor()
 	Item::items[stained_glass_Id]		= ( new WoolTileItem(Tile::stained_glass_Id - 256))->setIconName(L"stainedGlass")->setDescriptionId(IDS_TILE_STAINED_GLASS)->setUseDescriptionId(IDS_DESC_STAINED_GLASS);
 	Item::items[stained_glass_pane_Id]	= ( new WoolTileItem(Tile::stained_glass_pane_Id - 256))->setIconName(L"stainedGlassPane")->setDescriptionId(IDS_TILE_STAINED_GLASS_PANE)->setUseDescriptionId(IDS_DESC_STAINED_GLASS_PANE);
 	Item::items[woolCarpet_Id]			= ( new WoolTileItem(Tile::woolCarpet_Id - 256))->setIconName(L"woolCarpet")->setDescriptionId(IDS_TILE_CARPET)->setUseDescriptionId(IDS_DESC_CARPET);
-	Item::items[treeTrunk_Id]			= ( new MultiTextureTileItem(Tile::treeTrunk_Id - 256, treeTrunk, (int *)TreeTile::TREE_NAMES, 4) )->setIconName(L"log")->setDescriptionId(IDS_TILE_LOG)->setUseDescriptionId(IDS_DESC_LOG);
-	Item::items[wood_Id]				= ( new MultiTextureTileItem(Tile::wood_Id - 256, Tile::wood, (int *)WoodTile::WOOD_NAMES, 4, IDS_TILE_PLANKS))->setIconName(L"wood")->setDescriptionId(IDS_TILE_OAKWOOD_PLANKS)->setUseDescriptionId(IDS_DESC_LOG); //  <- TODO
+	Item::items[treeTrunk_Id]			= ( new MultiTextureTileItem(Tile::treeTrunk_Id - 256, treeTrunk, (int *)TreeTile::TREE_NAMES, 5) )->setIconName(L"log")->setDescriptionId(IDS_TILE_LOG)->setUseDescriptionId(IDS_DESC_LOG);
+	Item::items[wood_Id]				= ( new MultiTextureTileItem(Tile::wood_Id - 256, Tile::wood, (int *)WoodTile::WOOD_NAMES, 5, IDS_TILE_PLANKS))->setIconName(L"wood")->setDescriptionId(IDS_TILE_OAKWOOD_PLANKS)->setUseDescriptionId(IDS_DESC_LOG); //  <- TODO
 	Item::items[monsterStoneEgg_Id]		= ( new MultiTextureTileItem(Tile::monsterStoneEgg_Id - 256, monsterStoneEgg, (int *)StoneMonsterTile::STONE_MONSTER_NAMES, 3))->setIconName(L"monsterStoneEgg")->setDescriptionId(IDS_TILE_STONE_SILVERFISH)->setUseDescriptionId(IDS_DESC_STONE_SILVERFISH); // 4J - Brought forward from post-1.2 to fix stacking problem
 	Item::items[stoneBrick_Id]			= ( new MultiTextureTileItem(Tile::stoneBrick_Id - 256, stoneBrick,(int *)SmoothStoneBrickTile::SMOOTH_STONE_BRICK_NAMES, 4))->setIconName(L"stonebricksmooth")->setDescriptionId(IDS_TILE_STONE_BRICK_SMOOTH);
 	Item::items[sandStone_Id]			= ( new MultiTextureTileItem(sandStone_Id - 256, sandStone, SandStoneTile::SANDSTONE_NAMES, SandStoneTile::SANDSTONE_BLOCK_NAMES) )->setIconName(L"sandStone")->setDescriptionId(IDS_TILE_SANDSTONE)->setUseDescriptionId(IDS_DESC_SANDSTONE);

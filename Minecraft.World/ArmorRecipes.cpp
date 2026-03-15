@@ -48,30 +48,40 @@ void ArmorRecipes::_init()
 	ADD_OBJECT(map[0],Item::ironIngot);
 	ADD_OBJECT(map[0],Item::diamond);
 	ADD_OBJECT(map[0],Item::goldIngot);
+	ADD_OBJECT(map[0],Item::copperIngot);
+	ADD_OBJECT(map[0],Item::netheriteIngot);
 
 	ADD_OBJECT(map[1],Item::helmet_leather);
 //	ADD_OBJECT(map[1],Item::helmet_chain);
 	ADD_OBJECT(map[1],Item::helmet_iron);
 	ADD_OBJECT(map[1],Item::helmet_diamond);
 	ADD_OBJECT(map[1],Item::helmet_gold);
+	ADD_OBJECT(map[1],Item::helmet_copper);
+	ADD_OBJECT(map[1],Item::helmet_netherite);
 
 	ADD_OBJECT(map[2],Item::chestplate_leather);
 //	ADD_OBJECT(map[2],Item::chestplate_chain);
 	ADD_OBJECT(map[2],Item::chestplate_iron);
 	ADD_OBJECT(map[2],Item::chestplate_diamond);
 	ADD_OBJECT(map[2],Item::chestplate_gold);
+	ADD_OBJECT(map[2],Item::chestplate_copper);
+	ADD_OBJECT(map[2],Item::chestplate_netherite);
 
 	ADD_OBJECT(map[3],Item::leggings_leather);
 //	ADD_OBJECT(map[3],Item::leggings_chain);
 	ADD_OBJECT(map[3],Item::leggings_iron);
 	ADD_OBJECT(map[3],Item::leggings_diamond);
 	ADD_OBJECT(map[3],Item::leggings_gold);
+	ADD_OBJECT(map[3],Item::leggings_copper);
+	ADD_OBJECT(map[3],Item::leggings_netherite);
 
 	ADD_OBJECT(map[4],Item::boots_leather);
 //	ADD_OBJECT(map[4],Item::boots_chain);
 	ADD_OBJECT(map[4],Item::boots_iron);
 	ADD_OBJECT(map[4],Item::boots_diamond);
 	ADD_OBJECT(map[4],Item::boots_gold);
+	ADD_OBJECT(map[4],Item::boots_copper);
+	ADD_OBJECT(map[4],Item::boots_netherite);
 }
 
 // 4J-PB added for quick equip in the inventory
@@ -84,6 +94,8 @@ ArmorRecipes::_eArmorType ArmorRecipes::GetArmorType(int iId)
 	case Item::helmet_iron_Id:		
 	case Item::helmet_diamond_Id:						
 	case Item::helmet_gold_Id:	
+	case Item::helmet_copper_Id:						
+	case Item::helmet_netherite_Id:	
 		return eArmorType_Helmet;
 		break;
 
@@ -92,6 +104,8 @@ ArmorRecipes::_eArmorType ArmorRecipes::GetArmorType(int iId)
 	case Item::chestplate_iron_Id:	
 	case Item::chestplate_diamond_Id:
 	case Item::chestplate_gold_Id:
+	case Item::chestplate_copper_Id:
+	case Item::chestplate_netherite_Id:
 		return eArmorType_Chestplate;
 		break;
 
@@ -100,6 +114,8 @@ ArmorRecipes::_eArmorType ArmorRecipes::GetArmorType(int iId)
 	case Item::leggings_iron_Id:
 	case Item::leggings_diamond_Id:
 	case Item::leggings_gold_Id:
+	case Item::leggings_copper_Id:
+	case Item::leggings_netherite_Id:
 		return eArmorType_Leggings;
 		break;
 
@@ -108,6 +124,8 @@ ArmorRecipes::_eArmorType ArmorRecipes::GetArmorType(int iId)
 	case Item::boots_iron_Id:
 	case Item::boots_diamond_Id:
 	case Item::boots_gold_Id:
+	case Item::boots_copper_Id:
+	case Item::boots_netherite_Id:
 		return eArmorType_Boots;
 		break;
 	}

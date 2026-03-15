@@ -90,6 +90,8 @@ public:
 		eMaterial_book,
 		eMaterial_bookshelf,
 		eMaterial_wheat,
+		eMaterial_copper,
+		eMaterial_netherite,
 
 	}
 	eMaterial;
@@ -157,7 +159,10 @@ public:
 		static const Tier *STONE; //
 		static const Tier *IRON; //
 		static const Tier *DIAMOND; //
-		static const Tier *GOLD;
+		static const Tier *GOLD; //
+		static const Tier *COPPER;
+		static const Tier *NETHERITE;
+
 
 	private:
 		const int level;
@@ -200,6 +205,9 @@ public:
 	static Item *diamond;
 	static Item *ironIngot;
 	static Item *goldIngot;
+	static Item *copperIngot;
+	static Item *netheriteIngot;
+	static Item *netheriteScrap;
 	static Item *sword_iron;
 
 	static Item *sword_wood;
@@ -216,6 +224,16 @@ public:
 	static Item *shovel_diamond;
 	static Item *pickAxe_diamond;
 	static Item *hatchet_diamond;
+
+	static Item *sword_copper;
+	static Item *shovel_copper;
+	static Item *pickAxe_copper;
+	static Item *hatchet_copper;
+
+	static Item *sword_netherite;
+	static Item *shovel_netherite;
+	static Item *pickAxe_netherite;
+	static Item *hatchet_netherite;
 
 	static Item *stick;
 	static Item *bowl;
@@ -235,6 +253,8 @@ public:
 	static Item *hoe_iron;
 	static Item *hoe_diamond;
 	static Item *hoe_gold;
+	static Item *hoe_netherite;
+	static Item *hoe_copper;
 
 	static Item *seeds_wheat;
 	static Item *wheat;
@@ -264,6 +284,16 @@ public:
 	static ArmorItem *chestplate_gold;
 	static ArmorItem *leggings_gold;
 	static ArmorItem *boots_gold;
+
+	static ArmorItem *helmet_copper;
+	static ArmorItem *chestplate_copper;
+	static ArmorItem *leggings_copper;
+	static ArmorItem *boots_copper;
+
+	static ArmorItem *helmet_copper;
+	static ArmorItem *chestplate_copper;
+	static ArmorItem *leggings_copper;
+	static ArmorItem *boots_copper;
 
 	static Item *flint;
 	static Item *porkChop_raw;
@@ -617,6 +647,31 @@ public:
 	static const int horseArmorDiamond_Id = 419;
 	static const int lead_Id = 420;
 	static const int nameTag_Id = 421;
+
+	static const int helmet_copper_Id = 422;
+	static const int chestplate_copper_Id = 423;
+	static const int leggings_copper_Id = 423;
+	static const int boots_copper_Id = 424;
+
+	static const int sword_copper_Id = 425;
+	static const int pickAxe_copper_Id = 426;
+	static const int hatchet_copper_Id = 427;
+	static const int shovel_copper_Id = 428;
+
+	static const int helmet_netherite_Id = 429;
+	static const int chestplate_netherite_Id = 430;
+	static const int leggings_netherite_Id = 431;
+	static const int boots_netherite_Id = 432;
+
+	static const int sword_netherite_Id = 433;
+	static const int pickAxe_netherite_Id = 434;
+	static const int hatchet_netherite_Id = 435;
+	static const int shovel_netherite_Id = 436;
+
+	static const int copperIngot_Id = 437;
+	static const int netheriteIngot_Id = 438;
+	static const int netheriteScrap_Id = 439;
+
 
 public:
 	const int id;

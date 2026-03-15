@@ -4,7 +4,7 @@
 //import net.minecraft.world.level.tile.Tile;
 #pragma once
 
-#define MAX_ARMOUR_RECIPES 5
+#define MAX_ARMOUR_RECIPES 7
 class ArmorRecipes 
 {
 public:

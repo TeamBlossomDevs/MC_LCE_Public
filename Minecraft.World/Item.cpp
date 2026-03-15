@@ -27,6 +27,8 @@ const _Tier *_Tier::STONE = new _Tier(1, 131, 4, 1, 5); //
 const _Tier *_Tier::IRON = new _Tier(2, 250, 6, 2, 14); //
 const _Tier *_Tier::DIAMOND = new _Tier(3, 1561, 8, 3, 10); //
 const _Tier *_Tier::GOLD = new _Tier(0, 32, 12, 0, 22);
+const _Tier *_Tier::COPPER = new _Tier(1, 191, 5, 1, 13);
+const _Tier *_Tier::NETHERITE = new _Tier(4, 2031, 9, 4, 15);
 
 Random *Item::random = new Random();
 
@@ -41,8 +43,11 @@ BowItem *Item::bow = nullptr;
 Item *Item::arrow = nullptr;
 Item *Item::coal = nullptr;
 Item *Item::diamond = nullptr;
+Item *Item::netheriteScrap = nullptr;
 Item *Item::ironIngot = nullptr;
 Item *Item::goldIngot = nullptr;
+Item *Item::copperIngot = nullptr;
+Item *Item::netheriteIngot = nullptr;
 Item *Item::sword_iron = nullptr;
 
 Item *Item::sword_wood = nullptr;
@@ -59,6 +64,16 @@ Item *Item::sword_diamond = nullptr;
 Item *Item::shovel_diamond = nullptr;
 Item *Item::pickAxe_diamond = nullptr;
 Item *Item::hatchet_diamond = nullptr;
+
+Item *Item::sword_copper = nullptr;
+Item *Item::shovel_copper = nullptr;
+Item *Item::pickAxe_copper = nullptr;
+Item *Item::hatchet_copper = nullptr;
+
+Item *Item::sword_netherite = nullptr;
+Item *Item::shovel_netherite = nullptr;
+Item *Item::pickAxe_netherite = nullptr;
+Item *Item::hatchet_netherite = nullptr;
 
 Item *Item::stick = nullptr;
 Item *Item::bowl = nullptr;
@@ -78,6 +93,8 @@ Item *Item::hoe_stone = nullptr;
 Item *Item::hoe_iron = nullptr;
 Item *Item::hoe_diamond = nullptr;
 Item *Item::hoe_gold = nullptr;
+Item *Item::hoe_copper = nullptr;
+Item *Item::hoe_netherite = nullptr;
 
 Item *Item::seeds_wheat = nullptr;
 Item *Item::wheat = nullptr;
@@ -107,6 +124,16 @@ ArmorItem *Item::helmet_gold = nullptr;
 ArmorItem *Item::chestplate_gold = nullptr;
 ArmorItem *Item::leggings_gold = nullptr;
 ArmorItem *Item::boots_gold = nullptr;
+
+ArmorItem *Item::helmet_copper = nullptr;
+ArmorItem *Item::chestplate_copper = nullptr;
+ArmorItem *Item::leggings_copper = nullptr;
+ArmorItem *Item::boots_copper = nullptr;
+
+ArmorItem *Item::helmet_netherite = nullptr;
+ArmorItem *Item::chestplate_netherite = nullptr;
+ArmorItem *Item::leggings_netherite = nullptr;
+ArmorItem *Item::boots_netherite = nullptr;
 
 Item *Item::flint = nullptr;
 Item *Item::porkChop_raw = nullptr;
@@ -311,9 +338,23 @@ void Item::staticCtor()
 	Item::boots_iron		= static_cast<ArmorItem *>((new ArmorItem(53, ArmorItem::ArmorMaterial::IRON, 2, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_iron)->setIconName(L"bootsIron")->setDescriptionId(IDS_ITEM_BOOTS_IRON)->setUseDescriptionId(IDS_DESC_BOOTS_IRON));
 	Item::boots_diamond		= static_cast<ArmorItem *>((new ArmorItem(57, ArmorItem::ArmorMaterial::DIAMOND, 3, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_diamond)->setIconName(L"bootsDiamond")->setDescriptionId(IDS_ITEM_BOOTS_DIAMOND)->setUseDescriptionId(IDS_DESC_BOOTS_DIAMOND));
 	Item::boots_gold		= static_cast<ArmorItem *>((new ArmorItem(61, ArmorItem::ArmorMaterial::GOLD, 4, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_gold)->setIconName(L"bootsGold")->setDescriptionId(IDS_ITEM_BOOTS_GOLD)->setUseDescriptionId(IDS_DESC_BOOTS_GOLD));
+	Item::boots_gold		= static_cast<ArmorItem *>((new ArmorItem(61, ArmorItem::ArmorMaterial::GOLD, 4, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_gold)->setIconName(L"bootsGold")->setDescriptionId(IDS_ITEM_BOOTS_GOLD)->setUseDescriptionId(IDS_DESC_BOOTS_GOLD));
+
+	Item::helmet_netherite		= static_cast<ArmorItem *>((new ArmorItem(64, ArmorItem::ArmorMaterial::NETHERITE, 1, ArmorItem::SLOT_HEAD))->setBaseItemTypeAndMaterial(eBaseItemType_helmet, eMaterial_netherite)->setIconName(L"helmetNetherite")->setDescriptionId(IDS_ITEM_HELMET_DIAMOND)->setUseDescriptionId(IDS_DESC_HELMET_DIAMOND));
+	Item::chestplate_netherite	= static_cast<ArmorItem *>((new ArmorItem(65, ArmorItem::ArmorMaterial::NETHERITE, 1, ArmorItem::SLOT_TORSO))->setBaseItemTypeAndMaterial(eBaseItemType_chestplate, eMaterial_netherite)->setIconName(L"chestplateNetherite")->setDescriptionId(IDS_ITEM_CHESTPLATE_DIAMOND)->setUseDescriptionId(IDS_DESC_CHESTPLATE_DIAMOND));
+	Item::leggings_netherite	= static_cast<ArmorItem *>((new ArmorItem(66, ArmorItem::ArmorMaterial::NETHERITE, 1, ArmorItem::SLOT_LEGS))->setBaseItemTypeAndMaterial(eBaseItemType_leggings, eMaterial_netherite)->setIconName(L"leggingsNetherite")->setDescriptionId(IDS_ITEM_LEGGINGS_DIAMOND)->setUseDescriptionId(IDS_DESC_LEGGINGS_DIAMOND));
+	Item::boots_netherite		= static_cast<ArmorItem *>((new ArmorItem(67, ArmorItem::ArmorMaterial::NETHERITE, 1, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_netherite)->setIconName(L"bootsNetherite")->setDescriptionId(IDS_ITEM_BOOTS_DIAMOND)->setUseDescriptionId(IDS_DESC_BOOTS_DIAMOND));
+
+	Item::helmet_copper		= static_cast<ArmorItem *>((new ArmorItem(64, ArmorItem::ArmorMaterial::CHAIN, 1, ArmorItem::SLOT_HEAD))->setBaseItemTypeAndMaterial(eBaseItemType_helmet, eMaterial_copper)->setIconName(L"helmetChain")->setDescriptionId(IDS_ITEM_HELMET_IRON)->setUseDescriptionId(IDS_DESC_HELMET_IRON));
+	Item::chestplate_copper	= static_cast<ArmorItem *>((new ArmorItem(65, ArmorItem::ArmorMaterial::CHAIN, 1, ArmorItem::SLOT_TORSO))->setBaseItemTypeAndMaterial(eBaseItemType_chestplate, eMaterial_copper)->setIconName(L"chestplateChain")->setDescriptionId(IDS_ITEM_CHESTPLATE_IRON)->setUseDescriptionId(IDS_DESC_CHESTPLATE_IRON));
+	Item::leggings_copper	= static_cast<ArmorItem *>((new ArmorItem(66, ArmorItem::ArmorMaterial::CHAIN, 1, ArmorItem::SLOT_LEGS))->setBaseItemTypeAndMaterial(eBaseItemType_leggings, eMaterial_copper)->setIconName(L"leggingsChain")->setDescriptionId(IDS_ITEM_LEGGINGS_IRON)->setUseDescriptionId(IDS_DESC_LEGGINGS_IRON));
+	Item::boots_copper		= static_cast<ArmorItem *>((new ArmorItem(67, ArmorItem::ArmorMaterial::CHAIN, 1, ArmorItem::SLOT_FEET))->setBaseItemTypeAndMaterial(eBaseItemType_boots, eMaterial_copper)->setIconName(L"bootsChain")->setDescriptionId(IDS_ITEM_BOOTS_IRON)->setUseDescriptionId(IDS_DESC_BOOTS_IRON));
 
 	Item::ironIngot = ( new Item(9) )->setIconName(L"ingotIron")					->setBaseItemTypeAndMaterial(eBaseItemType_treasure,	eMaterial_iron)->setDescriptionId(IDS_ITEM_INGOT_IRON)->setUseDescriptionId(IDS_DESC_INGOT);
 	Item::goldIngot = ( new Item(10) )->setIconName(L"ingotGold")					->setBaseItemTypeAndMaterial(eBaseItemType_treasure,	eMaterial_gold)->setDescriptionId(IDS_ITEM_INGOT_GOLD)->setUseDescriptionId(IDS_DESC_INGOT);
+	Item::copperIngot = ( new Item(11) )->setIconName(L"ingotCopper")				->setBaseItemTypeAndMaterial(eBaseItemType_treasure,	eMaterial_copper)->setDescriptionId(IDS_ITEM_INGOT_IRON)->setUseDescriptionId(IDS_DESC_INGOT);
+	Item::netheriteIngot = ( new Item(12) )->setIconName(L"ingotNetherite")			->setBaseItemTypeAndMaterial(eBaseItemType_treasure,	eMaterial_netherite)->setDescriptionId(IDS_ITEM_INGOT_IRON)->setUseDescriptionId(IDS_DESC_INGOT);
+	Item::netheriteScrap = ( new Item(13) )->setIconName(L"netherite_scrap")		->setBaseItemTypeAndMaterial(eBaseItemType_treasure,	eMaterial_netherite)->setDescriptionId(IDS_ITEM_INGOT_IRON)->setUseDescriptionId(IDS_DESC_INGOT);
 
 
 	// 4J-PB - todo - add materials and base types to the ones below
@@ -560,6 +601,14 @@ int _Tier::getTierItemId() const
 	else if (this == Tier::DIAMOND)
 	{
 		return Item::diamond_Id;
+	}
+	else if (this == Tier::COPPER)
+	{
+		return Item::copperIngot_Id;
+	}
+	else if (this == Tier::NETHERITE)
+	{
+		return Item::netheriteScrap_Id;
 	}
 	return 0;
 }

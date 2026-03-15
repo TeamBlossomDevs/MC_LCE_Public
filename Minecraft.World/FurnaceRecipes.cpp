@@ -40,6 +40,9 @@ FurnaceRecipes::FurnaceRecipes()
 	addFurnaceRecipy(Tile::lapisOre_Id, new ItemInstance(Item::dye_powder, 1, DyePowderItem::BLUE), .2f);
 	addFurnaceRecipy(Tile::netherQuartz_Id, new ItemInstance(Item::netherQuartz), .2f);
 
+	// backport shiz
+	addFurnaceRecipy(Tile::ancientDebris, new ItemInstance(Item::netheriteScrap), 1.25f);
+	addFurnaceRecipy(Tile::copperOre, new ItemInstance(Item::copperIngot), 0.6f);
 
 }
 

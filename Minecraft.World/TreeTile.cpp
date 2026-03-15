@@ -13,7 +13,7 @@ const unsigned int TreeTile::TREE_NAMES[ TreeTile::TREE_NAMES_LENGTH] = {	IDS_TI
 													IDS_TILE_LOG_JUNGLE
 												};
 
-const wstring  TreeTile::TREE_STRING_NAMES[ TreeTile::TREE_NAMES_LENGTH] = {L"oak", L"spruce", L"birch", L"jungle"};
+const wstring  TreeTile::TREE_STRING_NAMES[ TreeTile::TREE_NAMES_LENGTH] = {L"oak", L"spruce", L"birch", L"jungle", L"cherry"};
 
 const wstring TreeTile::TREE_TEXTURES[] = {L"tree_side", L"tree_spruce", L"tree_birch", L"tree_jungle"};
 

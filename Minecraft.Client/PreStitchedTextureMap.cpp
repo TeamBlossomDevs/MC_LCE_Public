@@ -1135,7 +1135,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(23,	13,	L"sea_lanturn");
 		//redstone shiz, seems as if it uses a shader or something to change the light texture?
 		//ADD_ICON(23,	14,	L"daylight_detector");
-		ADD_ICON(23,	15,	L"iron_trap_door");
+		//ADD_ICON(23,	15,	L"iron_trap_door");
 
 		ADD_ICON(24,	0,	L"door_acacia_lower");
 		ADD_ICON(24,	1,	L"door_birch_lower");
@@ -1230,5 +1230,42 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(28,	15,	L"yellow_concrete_powder");
 
 		// everything else isnt as important to me. move on.
+
+		// backported shiz
+		ADD_ICON(34,	0,	L"ancient_debris");
+		ADD_ICON(34,	1,	L"ancient_debris_top");
+		ADD_ICON(34,	2,	L"cherry_log");
+		ADD_ICON(34,	3,	L"cherry_log_top");
+		ADD_ICON(34,	4,	L"cherry_planks");
+		ADD_ICON(34,	5,	L"cherry_leaves");
+		//ADD_ICON(34,	6,	L"cherry_door_upper");
+		//ADD_ICON(34,	7,	L"cherry_trapdoor");
+		ADD_ICON(34,	8,	L"stripped_cherry_log");
+		ADD_ICON(34,	9,	L"stripped_cherry_log_top");
+		//ADD_ICON(34,	10,	L"cherry_sapling");
+		ADD_ICON(34,	11,	L"netherite_block");
+		ADD_ICON(34,	12,	L"copper_block");
+		ADD_ICON(34,	13,	L"copper_ore");
+		//ADD_ICON(34,	14,	L"copper_trapdoor");
+		//ADD_ICON(34,	15,	L"copper_door_upper");
+
+		// no textures, mostly unused
+
+		//ADD_ICON(35,	0,	L"unused");
+		//ADD_ICON(35,	1,	L"unused");
+		//ADD_ICON(35,	2,	L"unused");
+		//ADD_ICON(35,	3,	L"unused");
+		//ADD_ICON(35,	4,	L"unused");
+		//ADD_ICON(35,	5,	L"unused");
+		//ADD_ICON(35,	6,	L"cherry_door_lower");
+		//ADD_ICON(35,	7,	L"unused");
+		//ADD_ICON(35,	8,	L"unused");
+		//ADD_ICON(35,	9,	L"unused");
+		//ADD_ICON(35,	10,	L"unused");
+		//ADD_ICON(35,	11,	L"unused");
+		//ADD_ICON(35,	12,	L"unused");
+		//ADD_ICON(35,	13,	L"unused");
+		//ADD_ICON(35,	14,	L"unused");
+		//ADD_ICON(35,	15,	L"copper_door_lower");
 	}
 }

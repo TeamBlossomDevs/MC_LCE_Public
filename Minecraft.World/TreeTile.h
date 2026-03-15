@@ -13,6 +13,8 @@ public:
 	static const int DARK_TRUNK = 1;
 	static const int BIRCH_TRUNK = 2;
 	static const int JUNGLE_TRUNK = 3;
+	static const int CHERRY_TRUNK = 4;
+
 
 	static const int MASK_TYPE = 0x3;
 	static const int MASK_FACING = 0xC;
@@ -20,7 +22,7 @@ public:
 	static const int FACING_X = 1 << 2;
 	static const int FACING_Z = 2 << 2;
 
-	static const int TREE_NAMES_LENGTH = 4;
+	static const int TREE_NAMES_LENGTH = 5;
 
 
 	static const unsigned int TREE_NAMES[TREE_NAMES_LENGTH];

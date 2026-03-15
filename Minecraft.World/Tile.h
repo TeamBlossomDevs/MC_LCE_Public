@@ -32,6 +32,7 @@ class Random;
 class HitResult;
 class Level;
 class HopperTile;
+class AncientDebrisTile;
 class Player;
 class LevelSource;
 class Mob;
@@ -365,6 +366,23 @@ public:
 	static const int clayHardened_Id = 172;
 	static const int coalBlock_Id = 173;
 
+	static const int cherryLog_Id = 174;
+	static const int cherryPlanks_Id = 175;
+	static const int ancientDebris_Id = 176;
+	static const int netheriteBlock_Id = 177;
+	static const int copperBlock_Id = 178;
+	static const int copperOre_Id = 179;
+	static const int cherryLeaves_Id = 180;
+	//static const int unused_id = 181;
+	//static const int unused_id = 182;
+	//static const int unused_id = 183;
+	//static const int unused_id = 184;
+	//static const int unused_id = 185;
+	//static const int unused_id = 186;
+	//static const int unused_id = 187;
+	//static const int unused_id = 188;
+
+
 
 	static Tile *stone;
 	static GrassTile *grass;
@@ -540,6 +558,15 @@ public:
 	static Tile *woolCarpet;
 	static Tile *clayHardened;
 	static Tile *coalBlock;
+
+	// backported stuff
+	static Tile *cherryLog;
+	static Tile *cherryPlanks;
+	static Tile *ancientDebris;
+	static Tile *netheriteBlock;
+	static Tile *copperBlock;
+	static Tile *copperOre;
+	static Tile *cherryLeaves;
 
 	static void staticCtor();
 

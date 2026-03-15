@@ -47,6 +47,9 @@ protected:
 	Feature *reedsFeature;
 	Feature *cactusFeature;
 	Feature *waterlilyFeature;
+	Feature *ancientDebrisFeature;
+	Feature *copperOreFeature;
+
 
 	int waterlilyCount;
 	int treeCount;

@@ -735,6 +735,7 @@ Recipes::Recipes()
 		L"iig",
 		Item::enderPearl, Item::blazePowder,
 		L'T');
+		
 
 	addShapelessRecipy(new ItemInstance(Item::fireball, 3), //
 		L"iiig",
@@ -744,6 +745,11 @@ Recipes::Recipes()
 	addShapelessRecipy(new ItemInstance(Item::fireball, 3), //
 		L"iizg",
 		Item::gunpowder, Item::blazePowder,new ItemInstance(Item::coal, 1, CoalItem::CHAR_COAL),
+		L'T');
+
+	addShapelessRecipy(new ItemInstance(Item::netheriteIngot, 3), //
+		L"iiiig",
+		Item::netheriteScrap, Item::netheriteScrap, Item::netheriteScrap, Item::goldIngot,
 		L'T');
 
 	addShapedRecipy(new ItemInstance(Item::lead, 2), //

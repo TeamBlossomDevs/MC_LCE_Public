@@ -40,6 +40,8 @@ public:
 	static Material *cake;
 	static Material *web;
 	static Material *piston;
+	static Material *copper;
+	static Material *netherite;
 
 	static const int PUSH_NORMAL = 0;
 	static const int PUSH_DESTROY = 1;

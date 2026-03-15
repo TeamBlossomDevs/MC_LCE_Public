@@ -2290,3 +2290,6 @@
 #define IDS_RICHPRESENCESTATE_ANVIL                            2284
 #define IDS_RICHPRESENCESTATE_TRADING                          2285
 #define IDS_WORLD_SIZE_TITLE_INFINITE                          2286
+#define IDS_TILE_CHERRY_PLANKS                                 2287
+//#define IDS_WORLD_SIZE_TITLE_INFINITE                          2288
+//#define IDS_WORLD_SIZE_TITLE_INFINITE                          2289

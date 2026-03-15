@@ -76,6 +76,8 @@ void Material::staticCtor()
 	// 4J added WebMaterial, Java version just does a local alteration when instantiating the Material for webs to get the same thing
 	Material::web = (new WebMaterial(MaterialColor::cloth))->notAlwaysDestroyable()->destroyOnPush();
 	Material::piston  = (new Material(MaterialColor::stone))->notPushable();
+	Material::netherite = (new Material(MaterialColor::metal))->notAlwaysDestroyable()->notPushable();
+	Material::copper = (new Material(MaterialColor::metal))->notAlwaysDestroyable();
 }
 
 Material::Material(MaterialColor *color)
